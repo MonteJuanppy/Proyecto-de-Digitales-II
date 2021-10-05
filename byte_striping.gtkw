@@ -1,0 +1,30 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Tue Oct  5 22:38:52 2021
+[*]
+[dumpfile] "/tmp/probador.vcd"
+[dumpfile_mtime] "Tue Oct  5 22:36:45 2021"
+[dumpfile_size] 2199
+[savefile] "/home/martin/Documents/6to_semestre/CircuitosDigitales2/Proyecto/Jesus/byte_striping.gtkw"
+[timestart] 0
+[size] 1000 600
+[pos] -1 -1
+*-2.847746 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 233
+[signals_width] 134
+[sst_expanded] 1
+[sst_vpaned_height] 144
+@28
+pruebas.clk_2f
+pruebas.clk_f
+@22
+pruebas.data_in[31:0]
+pruebas.lane_0[31:0]
+pruebas.lane_1[31:0]
+@28
+pruebas.valid_0
+pruebas.valid_1
+@29
+pruebas.valid_in
+[pattern_trace] 1
+[pattern_trace] 0

@@ -1,0 +1,18 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Tue Oct  5 23:25:10 2021
+[*]
+[dumpfile] "/home/martin/Documents/6to_semestre/CircuitosDigitales2/Proyecto/Martin/probador_unstriping.vcd"
+[dumpfile_mtime] "Tue Oct  5 23:22:47 2021"
+[dumpfile_size] 1066
+[savefile] "/home/martin/Documents/6to_semestre/CircuitosDigitales2/Proyecto/Martin/probador_unstriping.gtkw"
+[timestart] 0
+[size] 1000 600
+[pos] -46 3
+*-3.816037 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 233
+[signals_width] 78
+[sst_expanded] 1
+[sst_vpaned_height] 144
+[pattern_trace] 1
+[pattern_trace] 0
