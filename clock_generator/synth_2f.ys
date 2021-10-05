@@ -1,0 +1,5 @@
+read_verilog clk_2f.v
+hierarchy -check -top clk_2f
+proc; opt; fsm; opt; memory; opt
+techmap; opt 
+write_verilog synth_2f.v
