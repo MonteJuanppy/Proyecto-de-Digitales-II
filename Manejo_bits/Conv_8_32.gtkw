@@ -1,0 +1,36 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Tue Oct  5 22:32:57 2021
+[*]
+[dumpfile] "/home/montejuanppy/Documents/Circuitos_DIgitales_II/Proyecto_I/Proyecto-de-Digitales-II/Manejo_bits/Senales_8_32.vcd"
+[dumpfile_mtime] "Tue Oct  5 21:00:35 2021"
+[dumpfile_size] 11155
+[savefile] "/home/montejuanppy/Documents/Circuitos_DIgitales_II/Proyecto_I/Proyecto-de-Digitales-II/Manejo_bits/Conv_8_32.gtkw"
+[timestart] 0
+[size] 1848 1016
+[pos] -39 -39
+*-18.753765 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] BancoPruebas.
+[sst_width] 233
+[signals_width] 142
+[sst_expanded] 1
+[sst_vpaned_height] 289
+@28
+BancoPruebas.clk
+BancoPruebas.clk4f
+BancoPruebas.valid_0
+@22
+BancoPruebas.data_in[7:0]
+BancoPruebas.data_out[31:0]
+@28
+BancoPruebas.valid_out
+@200
+-Conductual
+@22
+BancoPruebas.conductual.data_out[31:0]
+@200
+-Estructural
+@22
+BancoPruebas.estructural.data_out[31:0]
+[pattern_trace] 1
+[pattern_trace] 0

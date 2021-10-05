@@ -1,7 +1,6 @@
 //Fecha: 04-10-2021
 //Version 1.0
-`include "clk_f.v"
-`include "clk_4f.v"
+`include "clock_generator.v"
 
 module Probador_32_8( // Módulo probador: generador de señales y monitor de datos
 
@@ -12,9 +11,9 @@ module Probador_32_8( // Módulo probador: generador de señales y monitor de da
 	input valid_out,
     input [7:0] salida); //entrada de 8 bits
 	
+	wire clk2;
 	reg reloj;
-	clk_1f f1(reloj,clk);
-	clk_4f f2(reloj,clk4f);
+	clock_generator f1(reloj,clk, clk2, clk4f);
 
 	// Generación cíclica de la señal reloj
 	initial	reloj <= 0; // Valor inicial al reloj, sino siempre ser� indeterminado
@@ -53,6 +52,7 @@ module Probador_32_8( // Módulo probador: generador de señales y monitor de da
 
 		//Quinta señal (se activa en el cuarto flanco creciente)
 		entrada = 32'h00000003;
+		@(posedge clk)
 		@(posedge clk)
 
 		//Sexta señal (se activa en el quinto flanco creciente)

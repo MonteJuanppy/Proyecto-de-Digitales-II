@@ -11,14 +11,12 @@ module Probador_8_32( // Módulo probador: generador de señales y monitor de da
     output reg [7:0] entrada, //salida de 8 bits
 	input valid_out,
     input [31:0] salida); //entrada de 32 bits
-	
-	reg reloj;
-	clk_1f f1(reloj,clk);
-	clk_4f f2(reloj,clk4f);
 
 	// Generación cíclica de la señal reloj
-	initial	reloj <= 0; // Valor inicial al reloj, sino siempre ser� indeterminado
-	always	#10 reloj <= ~reloj; // Hace "toggle" cada 10ns
+	initial	clk <= 0; // Valor inicial al reloj, sino siempre ser� indeterminado
+	initial clk4f <= 0;
+	always	#24 clk <= ~clk; // Hace "toggle" cada 10ns
+	always	#6 clk4f <= ~clk4f; // Hace "toggle" cada 10ns
 
 	initial begin
 
@@ -33,10 +31,10 @@ module Probador_8_32( // Módulo probador: generador de señales y monitor de da
 		$monitor("\t%b\t%b\t\t%h\t%h\t\t%b", clk, valid_0, entrada, salida, valid_out);
 
 		@(posedge clk4f)	// Espera/sincroniza con el flanco positivo del reloj
-        valid_0 = 1;
 		entrada = 8'hFF;
 		
 		@(posedge clk4f)
+		valid_0 = 1;
         @(posedge clk4f)
         @(posedge clk4f)
 
@@ -62,6 +60,7 @@ module Probador_8_32( // Módulo probador: generador de señales y monitor de da
         @(posedge clk4f)
         @(posedge clk4f)
         entrada = 8'h03;
+		@(posedge clk4f)
 
 		#15 $finish;
 

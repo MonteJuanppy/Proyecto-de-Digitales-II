@@ -19,7 +19,7 @@ module conv_8_32 (input clk, //senal de reloj
         2'b11: data_out[7:0] = data_in;
         default: data_out = 8'h00;
       endcase
-      contador = contador + 1;
+      contador <= contador + 1;
       valid_out <= valid_0;
       end
     else begin
