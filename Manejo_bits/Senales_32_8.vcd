@@ -1,0 +1,198 @@
+$date
+	Tue Oct  5 06:50:16 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	100ps
+$end
+$scope module BancoPruebas $end
+$var wire 1 ! valid_out $end
+$var wire 1 " valid_0 $end
+$var wire 8 # data_out [7:0] $end
+$var wire 32 $ data_in [31:0] $end
+$var wire 1 % clk4f $end
+$var wire 1 & clk $end
+$scope module conductual $end
+$var wire 1 " valid_0 $end
+$var wire 32 ' data_in [31:0] $end
+$var wire 1 % clk $end
+$var reg 2 ( contador [1:0] $end
+$var reg 8 ) data_out [7:0] $end
+$var reg 1 ! valid_out $end
+$upscope $end
+$scope module prob $end
+$var wire 8 * salida [7:0] $end
+$var wire 1 ! valid_out $end
+$var reg 1 & clk $end
+$var reg 1 % clk4f $end
+$var reg 32 + entrada [31:0] $end
+$var reg 1 " valid_0 $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx +
+bx *
+bx )
+b0 (
+bx '
+0&
+0%
+bx $
+bx #
+0"
+x!
+$end
+#20
+0!
+1%
+#40
+0%
+#60
+1%
+#80
+b11111111111111111111111111111111 $
+b11111111111111111111111111111111 '
+b11111111111111111111111111111111 +
+1"
+0%
+1&
+#100
+1!
+b1 (
+b11111111 #
+b11111111 )
+b11111111 *
+1%
+#120
+0%
+#140
+b10 (
+1%
+#160
+0%
+0&
+#180
+b11 (
+1%
+#200
+0%
+#220
+b0 (
+1%
+#240
+b11011101110111011101110111011101 $
+b11011101110111011101110111011101 '
+b11011101110111011101110111011101 +
+0%
+1&
+#260
+b1 (
+b11011101 #
+b11011101 )
+b11011101 *
+1%
+#280
+0%
+#300
+b10 (
+1%
+#320
+0%
+0&
+#340
+b11 (
+1%
+#360
+0%
+#380
+b0 (
+1%
+#400
+b11111111111111111111111111111111 $
+b11111111111111111111111111111111 '
+b11111111111111111111111111111111 +
+0"
+0%
+1&
+#420
+0!
+1%
+#440
+0%
+#460
+1%
+#480
+0%
+0&
+#500
+1%
+#520
+0%
+#540
+1%
+#560
+b11 $
+b11 '
+b11 +
+1"
+0%
+1&
+#580
+1!
+b1 (
+b0 #
+b0 )
+b0 *
+1%
+#600
+0%
+#620
+b10 (
+1%
+#640
+0%
+0&
+#660
+b11 (
+1%
+#680
+0%
+#700
+b0 (
+b11 #
+b11 )
+b11 *
+1%
+#720
+b0 $
+b0 '
+b0 +
+0%
+1&
+#740
+b1 (
+b0 #
+b0 )
+b0 *
+1%
+#760
+0%
+#780
+b10 (
+1%
+#800
+0%
+0&
+#820
+b11 (
+1%
+#840
+0%
+#860
+b0 (
+1%
+#870
