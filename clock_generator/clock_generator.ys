@@ -1,0 +1,5 @@
+read_verilog clock_generator.v
+hierarchy -check -top clock_generator
+proc; opt; fsm; opt; memory; opt
+techmap; opt
+write_verilog yosys_clock_generator.v
