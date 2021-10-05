@@ -4,3 +4,4 @@ clk_gen: clock_generator.v clk_tb.v
 		iverilog -o out clk_tb.v
 		vvp out
 		gtkwave clk_gen.vcd
+		

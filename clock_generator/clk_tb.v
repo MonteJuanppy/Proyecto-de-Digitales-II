@@ -3,25 +3,28 @@
 `include "yosys_clock_generator.v"
 
 module clk_divider_tb; 
-    wire clk_4;
-    wire clk_2;
-    wire clk_1;
-    wire clk_4_s;
-    wire clk_2_s;
-    wire clk_1_s;
-    reg clk_in;
+  
+    wire clk_4f;
+    wire clk_2f;
+    wire clk_f;
+
+    wire clk_4f_s;
+    wire clk_2f_s;
+    wire clk_f_s;
+
+    reg clk_32f;
 
     clock_generator conductual(
-        .clk_in (clk_in),
-        .clk_1 (clk_1),
-        .clk_2 (clk_2),
-        .clk_4 (clk_4));
+        .clk_in (clk_32f),
+        .clk_f (clk_f),
+        .clk_2f (clk_2f),
+        .clk_4f (clk_4f));
 
     yosys_clock_generator estructural(
-        .clk_in (clk_in),
-        .clk_1 (clk_1_s),
-        .clk_2 (clk_2_s),
-        .clk_4 (clk_4_s));
+        .clk_in (clk_32f),
+        .clk_f (clk_f_s),
+        .clk_2f (clk_2f_s),
+        .clk_4f (clk_4f_s));
     
     //para el osciloscopio GTKWAVE
     initial
@@ -30,9 +33,9 @@ module clk_divider_tb;
           $dumpvars;
         end
     initial
-        clk_in = 0;
+        clk_32f = 0;
     always 
-        #10 clk_in = ~clk_in; 
+        #10 clk_32f = ~clk_32f; 
     initial
         begin
             #1000 $finish;

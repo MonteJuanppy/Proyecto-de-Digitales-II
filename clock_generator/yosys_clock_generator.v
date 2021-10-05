@@ -2,12 +2,12 @@
 
 (* top =  1  *)
 (* src = " yosys_clock_generator.v:1" *)
-module  yosys_clock_generator(clk_in, clk_1, clk_2, clk_4);
-  (* src = " yosys_clock_generator.v:14" *)
-  wire _000_;
+module  yosys_clock_generator(clk_in, clk_f, clk_2f, clk_4f);
   (* src = " yosys_clock_generator.v:22" *)
-  wire _001_;
+  wire _000_;
   (* src = " yosys_clock_generator.v:30" *)
+  wire _001_;
+  (* src = " yosys_clock_generator.v:14" *)
   wire _002_;
   (* src = " yosys_clock_generator.v:14" *)
   wire [27:0] _003_;
@@ -494,15 +494,15 @@ module  yosys_clock_generator(clk_in, clk_1, clk_2, clk_4);
   wire _254_;
   (* src = " yosys_clock_generator.v:35|clock_generator.v:19|<techmap.v>:260|<techmap.v>:221" *)
   wire _255_;
-  (* src = " yosys_clock_generator.v:3" *)
-  output clk_1;
-  reg clk_1;
   (* src = " yosys_clock_generator.v:4" *)
-  output clk_2;
-  reg clk_2;
+  output clk_2f;
+  reg clk_2f;
   (* src = " yosys_clock_generator.v:5" *)
-  output clk_4;
-  reg clk_4;
+  output clk_4f;
+  reg clk_4f;
+  (* src = " yosys_clock_generator.v:3" *)
+  output clk_f;
+  reg clk_f;
   (* src = " yosys_clock_generator.v:2" *)
   input clk_in;
   (* init = 28'h0000004 *)
@@ -610,11 +610,11 @@ module  yosys_clock_generator(clk_in, clk_1, clk_2, clk_4);
   assign _004_[27] = _022_ ? (* src = " yosys_clock_generator.v:25" *) 1'h0 : _007_[27];
   assign _030_ = ~(* src = " yosys_clock_generator.v:17" *) _032_;
   assign _029_ = ~(* src = " yosys_clock_generator.v:17" *) _027_[31];
-  assign _000_ = ~(* src = " yosys_clock_generator.v:19" *) _045_[31];
-  assign _001_ = ~(* src = " yosys_clock_generator.v:27|clock_generator.v:19" *) _047_[31];
+  assign _002_ = ~(* src = " yosys_clock_generator.v:19" *) _045_[31];
+  assign _000_ = ~(* src = " yosys_clock_generator.v:27|clock_generator.v:19" *) _047_[31];
   assign _036_ = ~(* src = " yosys_clock_generator.v:25|clock_generator.v:17" *) _038_;
   assign _035_ = ~(* src = " yosys_clock_generator.v:25|clock_generator.v:17" *) _033_[31];
-  assign _002_ = ~(* src = " yosys_clock_generator.v:35|clock_generator.v:19" *) _049_[31];
+  assign _001_ = ~(* src = " yosys_clock_generator.v:35|clock_generator.v:19" *) _049_[31];
   assign _042_ = ~(* src = " yosys_clock_generator.v:33|clock_generator.v:17" *) _044_;
   assign _041_ = ~(* src = " yosys_clock_generator.v:33|clock_generator.v:17" *) _039_[31];
   (* src = " yosys_clock_generator.v:30" *)
@@ -703,7 +703,7 @@ module  yosys_clock_generator(clk_in, clk_1, clk_2, clk_4);
       counter3[27] <= _005_[27];
   (* src = " yosys_clock_generator.v:30" *)
   always @(posedge clk_in)
-      clk_4 <= _002_;
+      clk_4f <= _001_;
   (* src = " yosys_clock_generator.v:22" *)
   always @(posedge clk_in)
       counter2[0] <= _004_[0];
@@ -790,7 +790,7 @@ module  yosys_clock_generator(clk_in, clk_1, clk_2, clk_4);
       counter2[27] <= _004_[27];
   (* src = " yosys_clock_generator.v:22" *)
   always @(posedge clk_in)
-      clk_2 <= _001_;
+      clk_2f <= _000_;
   (* src = " yosys_clock_generator.v:14" *)
   always @(posedge clk_in)
       counter1[0] <= _003_[0];
@@ -877,7 +877,7 @@ module  yosys_clock_generator(clk_in, clk_1, clk_2, clk_4);
       counter1[27] <= _003_[27];
   (* src = " yosys_clock_generator.v:14" *)
   always @(posedge clk_in)
-      clk_1 <= _000_;
+      clk_f <= _002_;
   assign _006_[0] = counter1[0] ^(* src = " yosys_clock_generator.v:19|<techmap.v>:262" *)  1'h1;
   assign _046_[1] = counter1[1] ^(* src = " yosys_clock_generator.v:19|<techmap.v>:262" *)  1'h1;
   assign _046_[2] = counter1[2] ^(* src = " yosys_clock_generator.v:19|<techmap.v>:262" *)  1'h1;
