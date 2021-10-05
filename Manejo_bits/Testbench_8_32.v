@@ -6,6 +6,7 @@
 
 // includes de archivos de verilog
 `include "conv_8_32.v"
+`include "yosys_conv_8_32.v"
 `include "Probador_8_32.v"
 
 module BancoPruebas; // Testbench
@@ -19,6 +20,9 @@ module BancoPruebas; // Testbench
 	// Se instancia el módulo del convertidor 32 a 8 bits conductual
 	conv_8_32 conductual(.clk(clk4f), .valid_0(valid_0), .data_in(data_in), .data_out(data_out), .valid_out(valid_out));
 
+	// Se instancia el módulo del convertidor 32 a 8 bits estructural
+	yosys_conv_8_32 estructural(.clk(clk4f), .valid_0(valid_0), .data_in(data_in), .data_out(data_out), .valid_out(valid_out));
+	
 	// Probador: generador de señales y monitor
 	Probador_8_32 prob(.clk(clk), .clk4f(clk4f), .valid_0(valid_0), .entrada(data_in), .salida(data_out), .valid_out(valid_out));
 

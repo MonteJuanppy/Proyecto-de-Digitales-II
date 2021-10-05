@@ -1,0 +1,12 @@
+read_verilog conv_32_8.v
+
+hierarchy -check -top conv_32_8
+
+proc; opt; fsm; opt; memory; opt
+
+techmap; opt
+
+clean
+
+write_verilog yosys_conv_32_8.v
+show

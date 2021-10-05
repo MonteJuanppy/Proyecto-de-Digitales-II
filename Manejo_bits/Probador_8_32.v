@@ -1,20 +1,24 @@
 //Fecha: 04-10-2021
 //Version 1.0
+`include "clk_f.v"
+`include "clk_4f.v"
 
 module Probador_8_32( // Módulo probador: generador de señales y monitor de datos
 
-    output reg clk,
-	output reg clk4f,
+    output clk,
+	output clk4f,
 	output reg valid_0,
     output reg [7:0] entrada, //salida de 8 bits
 	input valid_out,
     input [31:0] salida); //entrada de 32 bits
 	
+	reg reloj;
+	clk_1f f1(reloj,clk);
+	clk_4f f2(reloj,clk4f);
+
 	// Generación cíclica de la señal reloj
-	initial	clk <= 0; // Valor inicial al reloj, sino siempre ser� indeterminado
-	initial clk4f <=0;
-	always	#8 clk <= ~clk; // Hace "toggle" cada 5ns
-	always	#2 clk4f <= ~clk4f; // Hace "toggle" cada 5ns
+	initial	reloj <= 0; // Valor inicial al reloj, sino siempre ser� indeterminado
+	always	#10 reloj <= ~reloj; // Hace "toggle" cada 10ns
 
 	initial begin
 
