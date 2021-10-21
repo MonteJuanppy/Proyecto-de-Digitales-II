@@ -18,13 +18,14 @@ module paralelo_serial (
     if (valid_0 == 1) begin
         data2send <= data_in;        // Asignar data_in a data2out
     end
-        
 
-    else begin
-        data2send <= 8'hBC;          // En caso de que valid sea 0 se le asigna hex(BC)
+    if (valid_0 == 0) begin
+        data2send <= 8'hBC;         // En caso de que valid sea 0 se le asigna hex(BC)
     end
-        
-    end
+
+    end  
+
+    
 
     always @(posedge clk_32f) begin         // Logica para convertir señal paralelo a serial
         case (contador)
