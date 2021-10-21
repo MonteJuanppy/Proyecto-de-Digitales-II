@@ -1,0 +1,30 @@
+`timescale 1s/1s
+`include "serial_paralelo.v"
+`include "serial_paralelo_tester.v"
+module paralelo_serial_tb;
+    wire clk_32f;
+    wire clk_4f;
+    wire data_in;
+    wire [7:0]data_out;
+    wire valid_out;
+    wire active;
+    
+    serial_paralelo serial_paralelo(/*AUTOINST*/
+				    // Outputs
+				    .data_out		(data_out[7:0]),
+				    .valid_out		(valid_out),
+				    .active		(active),
+				    // Inputs
+				    .clk_32f		(clk_32f),
+				    .clk_4f		(clk_4f),
+				    .data_in		(data_in));
+    serial_paralelo_tester serial_paralelo_tester(/*AUTOINST*/
+						  // Outputs
+						  .clk_32f		(clk_32f),
+						  .clk_4f		(clk_4f),
+						  .data_in		(data_in),
+						  // Inputs
+						  .data_out		(data_out[7:0]),
+						  .valid_out		(valid_out),
+						  .active		(active));
+endmodule
