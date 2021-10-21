@@ -1,0 +1,32 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Tue Oct  5 22:01:24 2021
+[*]
+[dumpfile] "/home/montejuanppy/Documents/Circuitos_DIgitales_II/Proyecto_I/Proyecto-de-Digitales-II/clock_generator/clk_gen.vcd"
+[dumpfile_mtime] "Tue Oct  5 21:55:53 2021"
+[dumpfile_size] 42901
+[savefile] "/home/montejuanppy/Documents/Circuitos_DIgitales_II/Proyecto_I/Proyecto-de-Digitales-II/clock_generator/Senales_reloj.gtkw"
+[timestart] 0
+[size] 1848 1016
+[pos] -89 -89
+*-17.052845 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 233
+[signals_width] 118
+[sst_expanded] 1
+[sst_vpaned_height] 289
+@28
+clk_divider_tb.clk_32f
+@200
+-Conductual
+@28
+clk_divider_tb.clk_f
+clk_divider_tb.clk_2f
+clk_divider_tb.clk_4f
+@200
+-Estructural
+@28
+clk_divider_tb.clk_f_s
+clk_divider_tb.clk_2f_s
+clk_divider_tb.clk_4f_s
+[pattern_trace] 1
+[pattern_trace] 0
