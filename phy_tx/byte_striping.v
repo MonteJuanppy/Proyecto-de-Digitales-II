@@ -1,4 +1,4 @@
-module byte_strip(
+module byte_striping(
     input clk_f,
     input clk_2f,
     input [31:0] data_in,
