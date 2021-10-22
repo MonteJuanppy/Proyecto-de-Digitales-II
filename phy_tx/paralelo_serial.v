@@ -6,7 +6,7 @@
 module paralelo_serial (
     input clk_4f,
     input clk_32f,
-    input valid_0,
+    input valid_in,
     input [7:0] data_in,
     output reg data_out
 );
@@ -15,11 +15,11 @@ module paralelo_serial (
     reg [2:0] contador = 3'b000;    // Contador para sincronizar salida data_out
 
     always @(posedge clk_4f) begin
-    if (valid_0 == 1) begin
+    if (valid_in == 1) begin
         data2send <= data_in;        // Asignar data_in a data2out
     end
 
-    if (valid_0 == 0) begin
+    if (valid_in == 0) begin
         data2send <= 8'hBC;         // En caso de que valid sea 0 se le asigna hex(BC)
     end
 

@@ -6,6 +6,7 @@
 
 // includes de archivos de verilog
 `include "phy_tx.v"
+`include "yosys_phy_tx.v"
 `include "probador_phy_tx.v"
 
 module banco_phy_tx; // Testbench
@@ -20,7 +21,7 @@ module banco_phy_tx; // Testbench
     wire phy_tx_out_1;
 
 	// Se instancia el módulo del convertidor 32 a 8 bits conductual
-	phy_tx phy_tx(/*AUTOINST*/
+	phy_tx conductual(/*AUTOINST*/
 		      // Outputs
 		      .phy_tx_out_0	(phy_tx_out_0),
 		      .phy_tx_out_1	(phy_tx_out_1),
@@ -28,6 +29,16 @@ module banco_phy_tx; // Testbench
 		      .data_in		(data_in[31:0]),
 		      .valid_in		(valid_in),
 		      .clk_32f		(clk_32f));
+
+	yosys_phy_tx estructural(/*AUTOINST*/
+		      // Outputs
+		      .phy_tx_out_0	(phy_tx_out_0),
+		      .phy_tx_out_1	(phy_tx_out_1),
+		      // Inputs
+		      .data_in		(data_in[31:0]),
+		      .valid_in		(valid_in),
+		      .clk_32f		(clk_32f));
+
 
 	// Probador: generador de señales y monitor
 	probador_phy_tx probador_phy_tx(/*AUTOINST*/

@@ -41,7 +41,6 @@ module phy_tx (input [31:0] data_in,
 				.valid_0	(valid_0),
 				.valid_1	(valid_1),
 				// Inputs
-				.clk_f		(clk_f),
 				.clk_2f		(clk_2f),
 				.data_in	(data_in[31:0]),
 				.valid_in	(valid_in));
@@ -70,7 +69,7 @@ module phy_tx (input [31:0] data_in,
 			   // Inputs
 			   .clk_4f		(clk_4f),
 			   .clk_32f		(clk_32f),
-			   .valid_0		(conv_32_8_valid_0),
+			   .valid_in		(conv_32_8_valid_0),
 			   .data_in		(conv_32_8_out_0));
 
     paralelo_serial sign_1(/*AUTOINST*/
@@ -79,7 +78,7 @@ module phy_tx (input [31:0] data_in,
 			   // Inputs
 			   .clk_4f		(clk_4f),
 			   .clk_32f		(clk_32f),
-			   .valid_0		(conv_32_8_valid_1),
+			   .valid_in		(conv_32_8_valid_1),
 			   .data_in		(conv_32_8_out_1));
 
     endmodule
