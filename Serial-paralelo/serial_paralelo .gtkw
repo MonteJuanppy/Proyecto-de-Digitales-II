@@ -1,0 +1,28 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Sat Oct 23 04:24:01 2021
+[*]
+[dumpfile] "/home/montejuanppy/Documents/Circuitos_DIgitales_II/Proyecto_I/Proyecto-de-Digitales-II/Serial-paralelo/serial_paralelo.vcd"
+[dumpfile_mtime] "Sat Oct 23 04:22:03 2021"
+[dumpfile_size] 5073
+[savefile] "/home/montejuanppy/Documents/Circuitos_DIgitales_II/Proyecto_I/Proyecto-de-Digitales-II/Serial-paralelo/serial_paralelo .gtkw"
+[timestart] 0
+[size] 1848 1016
+[pos] -39 -39
+*-6.207937 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 233
+[signals_width] 150
+[sst_expanded] 1
+[sst_vpaned_height] 289
+@200
+-Serial_paralelo
+@28
+paralelo_serial_tb.clk_4f
+paralelo_serial_tb.clk_32f
+paralelo_serial_tb.data_in
+@22
+paralelo_serial_tb.data_out[7:0]
+@29
+paralelo_serial_tb.valid_out
+[pattern_trace] 1
+[pattern_trace] 0

@@ -1,0 +1,95 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Sat Oct 23 04:46:25 2021
+[*]
+[dumpfile] "/home/montejuanppy/Documents/Circuitos_DIgitales_II/Proyecto_I/Proyecto-de-Digitales-II/phy/phy.vcd"
+[dumpfile_mtime] "Sat Oct 23 04:37:17 2021"
+[dumpfile_size] 19954
+[savefile] "/home/montejuanppy/Documents/Circuitos_DIgitales_II/Proyecto_I/Proyecto-de-Digitales-II/phy/phy.gtkw"
+[timestart] 0
+[size] 1848 1016
+[pos] -51 -51
+*-15.042412 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] banco_phy_tx.
+[treeopen] banco_phy_tx.conductual.
+[sst_width] 233
+[signals_width] 190
+[sst_expanded] 1
+[sst_vpaned_height] 289
+@200
+-Phy
+@28
+banco_phy_tx.clk_32f
+@22
+banco_phy_tx.data_in[31:0]
+@28
+banco_phy_tx.valid_in
+@22
+banco_phy_tx.data_out[31:0]
+@28
+banco_phy_tx.valid_out
+@200
+-Phy_tx
+-Clk generator
+@28
+banco_phy_tx.conductual.phy_tx.clk_f
+banco_phy_tx.conductual.phy_tx.clk_2f
+banco_phy_tx.conductual.phy_tx.clk_4f
+banco_phy_tx.conductual.phy_tx.clk_32f
+@200
+-Byte_striping
+@22
+banco_phy_tx.conductual.phy_tx.lane_0[31:0]
+@28
+banco_phy_tx.conductual.phy_tx.valid_0
+@22
+banco_phy_tx.conductual.phy_tx.lane_1[31:0]
+@28
+banco_phy_tx.conductual.phy_tx.valid_1
+@200
+-32_8 bits
+@22
+banco_phy_tx.conductual.phy_tx.conv_32_8_out_0[7:0]
+@28
+banco_phy_tx.conductual.phy_tx.conv_32_8_valid_0
+@22
+banco_phy_tx.conductual.phy_tx.conv_32_8_out_1[7:0]
+@28
+banco_phy_tx.conductual.phy_tx.conv_32_8_valid_1
+@200
+-Paralelo_serial
+@28
+banco_phy_tx.conductual.phy_tx.phy_tx_out_0
+banco_phy_tx.conductual.phy_tx.phy_tx_out_1
+@200
+-Phy_rx
+-Serial_paralelo
+@28
+banco_phy_tx.conductual.phy_rx.phy_tx_out_0
+banco_phy_tx.conductual.phy_rx.phy_tx_out_1
+@22
+banco_phy_tx.conductual.phy_rx.paralelo_0[7:0]
+@28
+banco_phy_tx.conductual.phy_rx.valid_0
+@22
+banco_phy_tx.conductual.phy_rx.paralelo_1[7:0]
+@28
+banco_phy_tx.conductual.phy_rx.valid_1
+@200
+-8_32 bits
+@22
+banco_phy_tx.conductual.phy_rx.lane_0[31:0]
+@28
+banco_phy_tx.conductual.phy_rx.conv_8_32_valid_0
+@22
+banco_phy_tx.conductual.phy_rx.lane_1[31:0]
+@28
+banco_phy_tx.conductual.phy_rx.conv_8_32_valid_1
+@200
+-Byte_unstriping
+@22
+banco_phy_tx.conductual.phy_rx.data_out[31:0]
+@29
+banco_phy_tx.conductual.phy_rx.valid_out
+[pattern_trace] 1
+[pattern_trace] 0
